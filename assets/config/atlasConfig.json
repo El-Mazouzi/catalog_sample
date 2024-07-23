@@ -1,0 +1,9 @@
+{
+    "appId": "YOUR_APP_ID",
+    "appUrl": "https://realm.mongodb.com/groups/61b9dcc055bfb8410bedd6cc/apps/65914d1532d5b2616b7714c3",
+    "baseUrl": "https://realm.mongodb.com",
+    "clientApiBaseUrl": "https://europe-west1.gcp.realm.mongodb.com",
+    "dataApiBaseUrl": "https://europe-west1.gcp.data.mongodb-api.com",
+    "dataExplorerLink": "https://cloud.mongodb.com/links/61b9dcc055bfb8410bedd6cc/explorer/yassir/database/collection/find",
+    "dataSourceName": "mongodb-atlas"
+}
