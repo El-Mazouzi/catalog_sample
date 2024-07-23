@@ -11,7 +11,7 @@ Follow these steps to set up and run the project:
    - Replace the existing app ID with your own.
 
 2. **Insert the Schema**
-   - Add the schema to your custom app device sync.
+   - Add the schema to your custom app device sync (you can just run the app).
 
 3. **Populate Collections Data**
    - Populate the `catalog_v3` and `shop` collections with the data located in the `data/` directory.
