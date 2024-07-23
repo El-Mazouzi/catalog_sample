@@ -1,16 +1,28 @@
-# catalog_sample
+# Catalog Sample Project
 
-A new Flutter project.
+This document provides a step-by-step guide to get started with the Catalog Sample Project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Follow these steps to set up and run the project:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Update the App ID**
+   - Open `assets/config/atlasConfig.json`.
+   - Replace the existing app ID with your own.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Insert the Schema**
+   - Add the schema to your custom app device sync.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Populate Collections Data**
+   - Populate the `catalog_v3` and `shop` collections with the data located in the `data/` directory.
+
+4. **Run the App**
+   - Start the application to see it in action.
+
+5. **Update Shop Data**
+   - Make any necessary updates to the shop data. You will receive events for these updates.
+
+6. **Update Catalog Data**
+   - Make any necessary updates to the catalog data. Note that you will not receive events for these updates.
+
+Ensure all these steps are followed correctly to successfully set up and run the Catalog Sample Project.
