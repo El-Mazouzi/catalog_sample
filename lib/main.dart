@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:catalog_sample/core/app_services.dart';
 import 'package:catalog_sample/core/flexible/config.dart';
+import 'package:catalog_sample/core/utils/log.dart';
 import 'package:catalog_sample/features/catalog/catalog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,6 +14,14 @@ late CatalogService catalogService;
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // If no category is set, default is LogCategory.realm
+  Realm.logger.setLogLevel(LogLevel.trace);
+
+  Realm.logger.onRecord.listen(
+    (event) {
+      logInfo(event.message);
+    },
+  );
   await setUpRealm();
 
   runApp(const MyApp());
@@ -75,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
   );
 
   // set the catalog id
-  final String catalogId = '8839aabb25fffff';
+  final String catalogId = '883969a0c7fffff';
 
   @override
   Widget build(BuildContext context) {
